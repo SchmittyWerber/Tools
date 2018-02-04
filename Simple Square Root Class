@@ -1,0 +1,15 @@
+public class LongSQRT {
+	
+	public static double sqrt(double input) {
+		double d;
+	 
+		double sqrt = input / 2;
+		
+		do {
+			d = sqrt;
+			sqrt = (d + (input / d)) / 2;
+		} while ((d - sqrt) != 0);
+		
+		return sqrt;
+	}
+}
